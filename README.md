@@ -1,3 +1,8 @@
+# EUREKA SERVER APPCHAT
+
+https://gentle-caverns-83442.herokuapp.com/
+
+
 ## Netflix OSS on Heroku Demo: Eureka Server
 
 This project demonstrates the use of Netflix OSS with Spring Cloud on Heroku. It defines a Eureka server
