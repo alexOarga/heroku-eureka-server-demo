@@ -1,7 +1,33 @@
-# EUREKA SERVER APPCHAT
+# [Update] Eureka Server :bulb:
 
-https://gentle-caverns-83442.herokuapp.com/
+Since [Heroku Demo Eureka Server](https://github.com/kissaten/heroku-eureka-server-demo) has not been updated in years,
+here is an edition updated in 2021:
+ - ```Spring Boot Starter``` has been updated to ```2.6.2``` 
+ - ```spring-cloud.version``` has been updated from ```Angel.SR6``` to ```2021.0.0```.
+ - Dependencies updated to, instead of pointing at deprecated ```com.netflix.eureka```, point at ```org.springframework.cloud```.
+- Included spring security. Credentials must be changed in ```application.yml```.
 
+## Discovering Services
+
+For a Spring service to be discovered by this server do:
+ 1. Include a compatible dependency version of Eureka Client. I highly encourage using Gradle:
+```
+compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
+``` 
+ 
+ 2. Include ```@EnableDiscoveryClient``` in your Spring main ```Application``` file.
+ 3. Include the following configuration in your ```yml``` file:
+```
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: 'https://<USER>:<PASSWORD>@<HEROKU-APPNAME>/eureka/'
+```  
+
+## Tutorial
+
+Official Heroku deployment tutorial can be found :point_right: [[here]](https://blog.heroku.com/managing_your_microservices_on_heroku_with_netflix_s_eureka)
+Original README content continues below :point_down: :point_down: :point_down::
 
 ## Netflix OSS on Heroku Demo: Eureka Server
 

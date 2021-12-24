@@ -1,9 +1,11 @@
 server:
   port: ${PORT:5000}
-security:
-  user:
-    name: user
-    password: password
+
+spring:
+  security:
+    user:
+      name: user
+      password: password
 
 eureka:
   instance:
