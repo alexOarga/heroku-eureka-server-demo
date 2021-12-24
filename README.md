@@ -27,6 +27,7 @@ eureka:
 ## Tutorial
 
 Official Heroku deployment tutorial can be found :point_right: [[here]](https://blog.heroku.com/managing_your_microservices_on_heroku_with_netflix_s_eureka)
+
 Original README content continues below :point_down: :point_down: :point_down::
 
 ## Netflix OSS on Heroku Demo: Eureka Server
